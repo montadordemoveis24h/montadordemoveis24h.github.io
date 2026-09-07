@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Montador de Móveis 24h em São Paulo | Orçamento</title>
+
+<meta name="description" content="Montador de móveis em São Paulo. Montagem, desmontagem e manutenção de móveis. Atendimento nas Zonas Sul, Leste, Norte e Centro. Peça seu orçamento pelo WhatsApp.">
+
+<meta name="keywords" content="montador de móveis, montador de móveis São Paulo, montagem de móveis SP, montador 24 horas, montador zona sul, montador zona leste, montador zona norte">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#172033;
+    line-height:1.6;
+}
+
+header{
+    background:#101828;
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#22c55e;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(135deg,#101828,#1d2939);
+    color:white;
+    padding:80px 7%;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:44px;
+    max-width:850px;
+    margin:auto;
+    line-height:1.15;
+}
+
+.hero h1 span{
+    color:#22c55e;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto 30px;
+    font-size:19px;
+    color:#d0d5dd;
+}
+
+.btn{
+    display:inline-block;
+    background:#22c55e;
+    color:white;
+    padding:16px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.btn:hover{
+    background:#16a34a;
+    transform:translateY(-2px);
+}
+
+.phone{
+    margin-top:20px;
+    font-size:18px;
+}
+
+section{
+    padding:65px 7%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title h2{
+    font-size:32px;
+    color:#101828;
+}
+
+.title p{
+    color:#667085;
+    margin-top:8px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    border:1px solid #eaecf0;
+}
+
+.card h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.card p{
+    color:#667085;
+}
+
+.icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.area{
+    background:#eafaf0;
+    border-radius:15px;
+    text-align:center;
+    padding:45px 25px;
+}
+
+.area h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.regions{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.region{
+    background:white;
+    padding:12px 20px;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-box{
+    background:#101828;
+    color:white;
+    padding:40px;
+    border-radius:15px;
+}
+
+.about-box h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+    background:#101828;
+    color:white;
+    max-width:none;
+}
+
+.contact h2{
+    font-size:35px;
+}
+
+.contact p{
+    color:#d0d5dd;
+    margin:15px auto 25px;
+    max-width:600px;
+}
+
+.contact .phone{
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+footer{
+    background:#080d17;
+    color:#98a2b3;
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#22c55e;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+@media(max-width:800px){
+
+    header{
+        padding:16px 5%;
+    }
+
+    .hero{
+        padding:60px 5%;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    .title h2{
+        font-size:28px;
+    }
+
+    .contact h2{
+        font-size:28px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Montador de Móveis <span>24h</span>
+</div>
+
+<a href="https://wa.me/5511962321658?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20montagem%20de%20móveis.">
+📲 Orçamento
+</a>
+
+</header>
+
+<section class="hero">
+
+<h1>
+Montador de Móveis <span>Profissional</span> em São Paulo
+</h1>
+
+<p>
+Montagem, desmontagem e manutenção de móveis com atendimento rápido e profissional.
+Atendemos residências e empresas.
+</p>
+
+<a class="btn" href="https://wa.me/5511962321658?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para montagem%20de%20móveis.">
+📲 PEDIR ORÇAMENTO
+</a>
+
+<div class="phone">
+📞 (11) 96232-1658
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+<h2>Serviços de Montagem</h2>
+<p>Soluções para diferentes tipos de móveis</p>
+</div>
+
+<div class="services">
+
+<div class="card">
+<div class="icon">🛏️</div>
+<h3>Montagem de Camas</h3>
+<p>Montagem de camas, beliches e outros móveis para quarto.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚪</div>
+<h3>Guarda-Roupas</h3>
+<p>Montagem e desmontagem de guarda-roupas de diversos modelos.</p>
+</div>
+
+<div class="card">
+<div class="icon">📺</div>
+<h3>Painéis e Racks</h3>
+<p>Montagem de painéis, racks e móveis para sala.</p>
+</div>
+
+<div class="card">
+<div class="icon">🍽️</div>
+<h3>Móveis de Cozinha</h3>
+<p>Montagem e instalação de móveis de cozinha.</p>
+</div>
+
+<div class="card">
+<div class="icon">🔧</div>
+<h3>Manutenção</h3>
+<p>Ajustes, reparos e manutenção de móveis.</p>
+</div>
+
+<div class="card">
+<div class="icon">📦</div>
+<h3>Desmontagem</h3>
+<p>Desmontagem para mudança, transporte ou reorganização.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="area">
+
+<h2>📍 Atendemos São Paulo</h2>
+
+<p>
+Atendimento em diversas regiões da capital paulista.
+Entre em contato e consulte a disponibilidade para seu endereço.
+</p>
+
+<div class="regions">
+
+<div class="region">Zona Sul</div>
+<div class="region">Zona Leste</div>
+<div class="region">Zona Norte</div>
+<div class="region">Centro</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="about">
+
+<div>
+
+<h2>Montagem com cuidado e profissionalismo</h2>
+
+<p>
+Seu móvel merece uma montagem correta e cuidadosa.
+Trabalhamos com montagem, desmontagem e manutenção de móveis para residências e empresas.
+</p>
+
+<br>
+
+<p>
+Entre em contato pelo WhatsApp e envie uma foto do móvel para receber informações sobre o serviço.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h2>Precisa montar um móvel?</h2>
+
+<p>
+Solicite seu orçamento diretamente pelo WhatsApp.
+</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/5511962321658?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para montagem de móveis.">
+📲 FALAR NO WHATSAPP
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Solicite seu orçamento</h2>
+
+<p>
+Envie uma mensagem pelo WhatsApp. Se possível, mande uma foto do móvel e informe sua região.
+</p>
+
+<div class="phone">
+📞 (11) 96232-1658
+</div>
+
+<a class="btn" href="https://wa.me/5511962321658?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para montagem de móveis.">
+PEDIR ORÇAMENTO PELO WHATSAPP
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Montador de Móveis 24h — São Paulo e região
+
+<br><br>
+
+Montagem • Desmontagem • Manutenção
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5511962321658?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para montagem de móveis." aria-label="WhatsApp">
+☏
+</a>
+
+</body>
+</html>
